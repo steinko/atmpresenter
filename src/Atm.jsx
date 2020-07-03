@@ -34,14 +34,14 @@ export default class Atm extends Component {
 				   <form onSubmit= {this.handleClick}>
 
 					   <label>Enter Info
-                          <input  id = 'info' type="text" name="info" value = {this.state.info } onChange = {this.handleChange}/>
+                          <input  id = "info" type="text" name="info" value = {this.state.info } onChange = {this.handleChange}/>
 					   </label>
 
 					   <label>Display
-						  <textarea  readOnly id = 'display' value = {this.state.display }/>      
+						  <textarea  readOnly id = "display" value = {this.state.display }/>      
 					   </label>
 
-					   <input id = 'pushButtonA' type="submit"  value = 'A'/>
+					   <input id = "pushButtonA" type="submit"  value = "A"/>
 				
 				   </form>
 				   

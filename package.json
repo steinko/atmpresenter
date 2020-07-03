@@ -11,9 +11,12 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+
+    "start:dev": "PORT=2000 DOTENV_CONFIG_PATH=./.env node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts.js start",
+    "test:build": "DOTENV_CONFIG_PATH=./.env.build node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts.js test ./src",
+    "test:dev": " DOTENV_CONFIG_PATH=./.env node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts.js test ./src",
+    "test:test": "DOTENV_CONFIG_PATH=./.env.test node -r dotenv/config ./node_modules/react-scripts/bin/react-scripts.js test ./src",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
